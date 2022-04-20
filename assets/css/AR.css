@@ -1,0 +1,38 @@
+body {
+  direction: rtl;
+}
+.none-paddin {
+  padding: 0;
+}
+.navbar-header {
+  float: right;
+  margin: 0 !important;
+}
+@media (min-width: 0) {
+  .navbar-right {
+    float: left !important;
+    padding: 0;
+  }
+}
+
+.navbar-toggle {
+  float: left;
+}
+#navbar-top > nav > div > div.collapse.navbar-collapse {
+  padding: 0 !important;
+}
+#navbar-top > nav > div > div.collapse.navbar-collapse > ul {
+  display: flex;
+}
+#navbar-top > nav > div > div.collapse.navbar-collapse > ul > li {
+  float: none;
+}
+@media (max-width: 767px) {
+  #navbar-top > nav > div > div.collapse.navbar-collapse > ul {
+    display: block;
+  }
+  #navbar-top > nav > div > div.navbar-collapse.collapse.in {
+    overflow: hidden;
+    margin: 75px 0;
+  }
+}
